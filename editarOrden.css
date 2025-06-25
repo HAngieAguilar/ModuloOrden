@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kay+Pho+Du&display=swap');
+
+body {
+    justify-content: center;
+    align-items: center;
+    background-color: #D9D9D9;
+    font-family: 'Kay Pho Du', serif;
+    margin: 0;
+    padding: 0;
+}
+
+.Formulario {
+    background:
+        linear-gradient(#6e7881, #6e7881) padding-box,
+        linear-gradient(to right, #1E3D59, #60202f, #A71818) border-box;
+    border: 12px solid transparent;
+    border-radius: 10px;
+    padding: 35px;
+    margin: 30px auto;
+    width: 90%;
+    max-width: 1000px;
+}
+
+h1 {
+    font-family: 'Protest Strike', sans-serif;
+    text-align: center;
+    font-size: 60px;
+    color: #1E3D59;
+}
+
+h3 {
+    font-family: 'Kay Pho Du', serif;
+    font-size: 30px;
+    text-align: center;
+    color: #1E3D59;
+    margin-bottom: 20px;
+}
+
+/* Etiquetas generales */
+label {
+    font-weight: lighter;
+    font-family: 'Protest Strike', sans-serif;
+    font-size: 18px;
+    display: block;
+    margin-bottom: 6px;
+    color: #000;
+}
+
+/* Inputs y textarea */
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #999;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #D9D9D9;
+    font-family: 'Kay Pho Du', serif;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+/* Grids de datos */
+.DatosOrden {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 65px;
+    justify-content: space-between;
+}
+
+.DatosOrden > div {
+    flex: 1 1 45%;
+}
+
+.DatosVehiculo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 20px;
+}
+
+/* Botones */
+.botones {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 30px;
+}
+
+.Envio,
+.Eliminar
+.Salir {
+    background-color: #1E3D59;
+    color: #fff;
+    font-family: 'Protest Strike', sans-serif;
+    font-size: 14px;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.Envio:hover,
+.Eliminar:hover,
+.Salir:hover {
+    background-color: #A71818;
+}

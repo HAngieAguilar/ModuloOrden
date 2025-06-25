@@ -1,0 +1,179 @@
+    /* Reset general */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      overflow: hidden;
+      font-family: 'Raleway', sans-serif;
+    }
+
+    .container-fluid {
+      display: flex;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .left-section {
+      flex: 6;
+      background: url('../../views/img/login/carrologin.png') no-repeat center center;
+      background-size: cover;
+      position: relative;
+      overflow: hidden;
+      clip-path: polygon(0 0, 95% 0, 100% 100%, 0% 100%);
+    }
+
+    .left-section::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      clip-path: polygon(0 0, 95% 0, 100% 100%, 0% 100%);
+      z-index: 1;
+      pointer-events: none;
+    }
+
+    .right-section {
+      flex: 4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #fff;
+      overflow-y: auto;
+    }
+
+    .form-container {
+      width: 90%;
+      max-width: 400px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      text-align: center;
+      line-height: 1.1;
+    }
+
+    .logo {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .logo img {
+      width: 160px;
+    }
+
+    h1,
+    .titulo {
+      font-size: 36px;
+      font-weight: bold;
+      margin: 0;
+      padding: 0;
+      line-height: 1;
+    }
+
+    .text-wrap h1 {
+      font-size: 50px;
+    }
+
+    .text-wrap,
+    .text-wrap h1,
+    .text-wrap p {
+      margin: 0;
+      padding: 0;
+      line-height: 1;
+      font-family: 'Protest Strike', sans-serif;
+    }
+
+    .text-wrap p {
+      font-size: 25px;
+    }
+
+    .input-bold {
+      padding: 12px;
+      font-size: 16px;
+      font-weight: bold;
+      background-color: #6c757d;
+      border: none;
+      color: #000;
+      border-radius: 5px;
+      font-family: 'Kay Pho Du', serif;
+    }
+
+    .input-bold::placeholder {
+      color: #000;
+      opacity: 1;
+    }
+
+    .form-container input {
+      padding: 12px;
+      font-size: 16px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    .login-btn,
+    .google-btn {
+      width: 120%;
+      max-width: 300px;
+      margin: 0 auto;
+      padding: 15px;
+      font-size: 18px;
+      font-weight: bold;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: 'Protest Strike', sans-serif;
+    }
+
+    .login-btn {
+      background-color: #a51414;
+      color: #000;
+      border: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .login-btn:hover {
+      background-color: #c40000;
+    }
+
+    .google-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background: white;
+      border: 2px solid black;
+    }
+
+    .google-icon {
+      width: 20px;
+      height: 20px;
+    }
+
+    .options {
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
+      font-family: 'Protest Strike', sans-serif;
+    }
+
+    .terminos,
+    .register {
+      font-size: 12px;
+      margin-top: 5px;
+      font-family: 'Protest Strike', sans-serif;
+    }
+
+    .form-error {
+      color: red;
+      font-size: 17px;
+      margin: 5px 0 0;
+      text-align: center;
+    }

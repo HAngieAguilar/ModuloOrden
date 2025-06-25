@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="borrar.css">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kay+Pho+Du&display=swap');
+
+body {
+    font-family: 'Kay Pho Du', serif;
+    background-color: #fff;
+    color: #1E3D59;
+    margin: 30px;
+}
+
+.Formulario {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+    border: 2px solid #A71818;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+.parteSuperior {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.parteSuperior img {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.parteSuperior h1 {
+    font-family: 'Protest Strike', sans-serif;
+    font-size: 30px;
+    color: #A71818;
+}
+
+h3 {
+    font-family: 'Kay Pho Du', serif;
+    padding: 10px;
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    font-size: 18px;
+    background-color:  #1E3D59;
+    color: white;
+}
+
+.DatosOrden,
+.DatosVehiculo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.DatosOrden > div,
+.DatosVehiculo > div {
+    width: 48%;
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 14px;
+    color: black;
+    margin-bottom: 6px;
+    display: block;
+    font-family: 'Protest Strike', sans-serif;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #999;
+    background-color: #f4f4f4;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #333;
+    font-family: 'Kay Pho Du', serif;
+}
+
+input[readonly],
+textarea[readonly] {
+    background-color: #eaeaea;
+    color: #444;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+    margin-top: 8px;
+    margin-bottom: 25px;
+}
+
+.marca-agua {
+    position: fixed;
+    bottom: 30px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 32px;
+    color: rgba(167, 24, 24, 0.07);
+    transform: rotate(-20deg);
+    z-index: -1;
+}
+
+    </style>
+</head>
+<body>
+    
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Orden de Trabajo #<?= $orden['idOrdenDeTrabajo'] ?></title>
+   
+</head>
+<body>
+
+<div class="Formulario">
+    <div class="parteSuperior">
+        <img src="logo.png" alt="LogoRunnerCar">
+        <h1>Orden De Trabajo #<?= $orden['idOrdenDeTrabajo'] ?></h1>
+    </div>
+
+    <div class="DatosOrden">
+        <div>
+            <label>ID Orden</label>
+            <input type="text" value="<?= $orden['idOrdenDeTrabajo'] ?>" readonly>
+        </div>
+        <div>
+            <label>Nombre Empleado</label>
+            <input type="text" value="<?= $orden['tecnico'] ?>" readonly>
+        </div>
+        <div>
+            <label>Fecha de Creación</label>
+            <input type="text" value="<?= $orden['fechaCreacion'] ?>" readonly>
+        </div>
+        <div>
+            <label>Costo Total</label>
+            <input type="text" value="<?= $orden['costoTotal'] ?>" readonly>
+        </div>
+        <div>
+            <label>Nombre Cliente</label>
+            <input type="text" value="<?= $orden['cliente'] ?>" readonly>
+        </div>
+        <div>
+            <label>ID Cliente</label>
+            <input type="text" value="<?= $orden['id_cliente'] ?>" readonly>
+        </div>
+    </div>
+
+    <div class="DatosVehiculo">
+        <div>
+            <label>Vehículo</label>
+            <input type="text" value="<?= $orden['Vehiculo'] ?>" readonly>
+        </div>
+        <div>
+            <label>Modelo</label>
+            <input type="text" value="<?= $orden['Modelo'] ?>" readonly>
+        </div>
+        <div>
+            <label>Color</label>
+            <input type="text" value="<?= $orden['Color'] ?>" readonly>
+        </div>
+        <div>
+            <label>Placa</label>
+            <input type="text" value="<?= $orden['Placa'] ?>" readonly>
+        </div>
+        <div>
+            <label>Kilometraje</label>
+            <input type="text" value="<?= $orden['kilometraje'] ?>" readonly>
+        </div>
+        <div>
+            <label>Gasolina</label>
+            <input type="text" value="<?= $orden['Gasolina'] ?>" readonly>
+        </div>
+    </div>
+
+    <h3>Descripción del Vehículo</h3>
+    <textarea readonly><?= $orden['descripcion'] ?></textarea>
+
+    <h3>Servicios Realizados</h3>
+    <textarea readonly><?= $orden['servicios'] ?></textarea>
+</div>
+
+
+
+
+
+</body>
+</html>

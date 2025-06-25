@@ -1,0 +1,57 @@
+.cajaBorde {
+    background-color: #D9D9D9; 
+    border: 12px ;
+    border-radius: 10px;
+    padding: 35px;
+    margin-top: 30px;
+    position: relative;
+    background: 
+      linear-gradient(#ffffff, #ffffff) padding-box,
+      linear-gradient(to right, #1E3D59, #60202f, #A71818) border-box;
+    border: 12px solid transparent;
+    border-radius: 10px;
+    padding: 35px;
+    margin-top: 30px;
+
+}
+
+body {
+    background: #788189;
+}
+
+.TituloE {
+    text-align: center;
+    font-family: 'Protest Strike', sans-serif;
+    font-size: 60px;
+}
+
+.texto {
+    text-align: center;
+    font-family: 'Kay Pho Du', sans-serif;
+    font-size: 30px;
+}
+
+.botonRecuperrar {
+    display: block;
+    margin: 10px auto; 
+    border-radius: 8px;
+    background-color: #1E3D59;
+    color: #fff;
+    font-family: 'Protest Strike', sans-serif;
+    font-size: 18px; 
+    padding: 14px 28px; 
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+    text-align: center; 
+
+}
+
+.botonRecuperrar:hover {
+    background-color: #A71818; 
+}
+
+.ImagenError {
+    text-align: center; 
+    margin-bottom: 20px; 
+}
